@@ -716,8 +716,8 @@ AI_PROVIDERS = {
 def get_ai_key(provider: str) -> str:
     """從 secrets 或 session_state 取得指定供應商的 API Key"""
     key_map = {
-        "gemini": "GEMINI_API_KEY",
         "groq":   "GROQ_API_KEY",
+        "gemini": "GEMINI_API_KEY",
         "claude": "ANTHROPIC_API_KEY",
     }
     secret_key = key_map.get(provider, "")
