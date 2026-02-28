@@ -708,8 +708,8 @@ def build_analysis_prompt(symbol: str, interval_label: str, df: pd.DataFrame,
 
 # ── AI 供應商設定 ────────────────────────────────────────────────────────────
 AI_PROVIDERS = {
-    "Gemini 2.0 Flash（免費）": "gemini",
     "Groq LLaMA 3.3（免費）":  "groq",
+    "Gemini 2.0 Flash（免費）": "gemini",
     "Claude Sonnet（付費）":   "claude",
 }
 
