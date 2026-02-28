@@ -836,15 +836,6 @@ def call_claude_analysis(prompt): return call_ai_analysis(prompt, "claude")
 
 # 各供應商說明
 PROVIDER_INFO = {
-    "gemini": {
-        "name":        "Gemini 2.0 Flash",
-        "free":        True,
-        "quota":       "每天 1,500 次，每分鐘 60 次",
-        "url":         "https://aistudio.google.com/apikey",
-        "placeholder": "AIza...",
-        "secret_key":  "GEMINI_API_KEY",
-        "guide":       "前往 aistudio.google.com → Get API Key → Create API Key",
-    },
     "groq": {
         "name":        "Groq LLaMA 3.3 70B",
         "free":        True,
@@ -854,6 +845,16 @@ PROVIDER_INFO = {
         "secret_key":  "GROQ_API_KEY",
         "guide":       "前往 console.groq.com → API Keys → Create API Key",
     },
+    "gemini": {
+        "name":        "Gemini 2.0 Flash",
+        "free":        True,
+        "quota":       "每天 1,500 次，每分鐘 60 次",
+        "url":         "https://aistudio.google.com/apikey",
+        "placeholder": "AIza...",
+        "secret_key":  "GEMINI_API_KEY",
+        "guide":       "前往 aistudio.google.com → Get API Key → Create API Key",
+    },
+    
     "claude": {
         "name":        "Claude Sonnet",
         "free":        False,
