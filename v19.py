@@ -874,7 +874,7 @@ def render_ai_analysis(symbol: str, interval_label: str, df: pd.DataFrame,
     # ── 供應商選擇（放在 session，跨 symbol 共用）─────────────────────────
     provider_labels = list(AI_PROVIDERS.keys())
     if "ai_provider" not in st.session_state:
-        st.session_state["ai_provider"] = "gemini"   # 預設免費的 Gemini
+        st.session_state["ai_provider"] = "groq"   # 預設免費的 Gemini
 
     col_sel, col_btn = st.columns([3, 1])
     with col_sel:
